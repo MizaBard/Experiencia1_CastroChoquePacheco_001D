@@ -4,7 +4,7 @@ footer
 {
     margin: 0 30px;
     color:
-    rgb(255 255 255 / 50%);
+    rgb(1, 0, 0 / 50%);
 }
 
 /* esta es la perte superior de nuestro footer  */
@@ -14,7 +14,7 @@ footer.top
     display: grid;
     border-bottom: 
     2px solid
-    rgb(255 255 255 / 20%); /*colores*/
+    rgb(0, 252, 29); /*colores*/
     padding-bottom: 20px;
 }
 
@@ -54,7 +54,7 @@ footer.top h2
     text-transform: uppercase;
     letter-spacing: 1px;
     color:
-        rgb(255 255 255 / 96%); /*colores*/
+        rgba(251, 0, 0, 0.96); /*colores*/
 }
 
 
@@ -188,4 +188,10 @@ footer.bottom{
 :is(h2, p){
     display:block;
 }
+}
+
+footer
+{
+    background-color:
+    rgba(25, 5, 115, 0.5);
 }
