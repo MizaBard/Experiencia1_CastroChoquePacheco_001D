@@ -11,7 +11,7 @@
 
 .slider {
     display: flex;
-    aspect-ratio: 10 / 10;
+    aspect-ratio:4/5;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -36,7 +36,7 @@
     display: flex;
     column-gap: 1rem;
     position: absolute;
-    top: 1.25rem;
+    bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -46,7 +46,7 @@
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #ffffff;
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
@@ -57,14 +57,14 @@
 
 
 /* para las descripciones de cada item de carrusel */
-.slider-item {
+/* .slider-item {
     position: relative;
     flex: 0 0 auto;
     scroll-snap-align: start;
     overflow: hidden;
-}
+} */
 /* formato del cuadro y letra de este mismo  */
-.caption {
+/* .caption {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -77,9 +77,9 @@
     transition: opacity 0.3s ease;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-}
+} */
 
 /* al poner el cursor sobre el slider item ponemos el caption */
-.slider-item:hover .caption{
+/* .slider-item:hover .caption{
     opacity: 1;
-}
+} */
