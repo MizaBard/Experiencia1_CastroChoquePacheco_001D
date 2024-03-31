@@ -1,31 +1,78 @@
+.section{
+    height: 100vh;
+    display: grid;
+    flex-wrap: wrap;
+}
+ 
 h1{
     color:white;
     text-shadow: 1px 2px 2px black, 0 0 25px;
     text-align: center;
 }
 
-.galeria{
+
+h2 {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.card {
     margin: 10px 100px;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    float: left;
-    width: 350px;
+    padding: 30px;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
 }
 
-.galeria img {
+.card img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    display: grid;
+    height: 100%;
+    object-fit: cover;
 }
 
-.galeria:hover{
-    transform: scale(1.25,1.25);
+.card-container {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    border-radius: 10px;
 }
 
-.pie{
-    text-align: center;
-    color: white;
-    background-color: #393e46;
-    text-shadow: 2px 2px 5px rgb(0, 0, 0);
-    padding: 10px;
+.card:hover .card-container {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #a4b4b4;
+}
+
+.contenedor-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 0 0;
+    padding: 20px;
+}
+
+.front-face {
+    transform: rotateY(0deg);
+}
+
+.back-face {
+    display: flex;
+    transform: rotateY(180deg);
 }
