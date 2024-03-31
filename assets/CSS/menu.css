@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    background-color: rgb(152, 190, 216);
+}
+
 nav{
-    background-color: #aa8c05;
+    background-color: #393e46;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     align-items: center;
@@ -15,6 +20,7 @@ nav{
     height: 70px;
     width: auto;
     transition: all 0.3s;
+    border-radius: 10px;
 }
 
 .header img:hover { 
@@ -39,11 +45,12 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: white;
+    color: #eeeeee;
 }
 
 nav a:hover{
-    background-color: #ffbc0e;
+    background-color: #558197;
+    border-radius: 50px;
 }
 
 nav li:first-child{
@@ -57,7 +64,7 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: #aa8c051c;
+    background-color: #4759941c;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
