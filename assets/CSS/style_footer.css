@@ -184,12 +184,14 @@ footer.bottom{
         flex-start;
 }
 
+/* columna de socials */
 .socials-column
 :is(h2, p){
     display:block;
 }
 }
 
+/*color de fondo del footer  */
 footer
 {
     background-color:
