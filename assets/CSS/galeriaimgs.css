@@ -1,0 +1,31 @@
+h1{
+    color:white;
+    text-shadow: 1px 2px 2px black, 0 0 25px;
+    text-align: center;
+}
+
+.galeria{
+    margin: 10px 100px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 350px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: grid;
+}
+
+.galeria:hover{
+    transform: scale(1.25,1.25);
+}
+
+.pie{
+    text-align: center;
+    color: white;
+    background-color: #393e46;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding: 10px;
+}
