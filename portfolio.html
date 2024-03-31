@@ -3,8 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hojas de estilos -->
     <link rel="stylesheet" href="assets/CSS/menu.css">
-    <link rel="stylesheet" href="assets/CSS/carrusel.css">
+    <link rel="stylesheet" href="assets/CSS/galeriaimgs.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/avicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/imgs/favicon/site.webmanifest">
+    <!-- fin Favicon -->
+
     <title>Xan Proxy</title>
 
 </head>
@@ -15,13 +24,13 @@
             <ul class="sidebar">
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="infoChan.html">Sobre Chan</a></li>
+                <li><a href="infoChan.html">Sobre Xan</a></li>
                 <li><a href="portfolio.html">Portafolio</a></li>
             </ul>
             <ul>
                 <li><img src="assets/imgs/logo chan 1500x512 v2.png" alt="logo"></li>
                 <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
-                <li class="hideOnMobile"><a href="infoChan.html">Sobre Chan</a></li>
+                <li class="hideOnMobile"><a href="infoChan.html">Sobre Xan</a></li>
                 <li class="hideOnMobile"><a href="portfolio.html">Portafolio</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
@@ -29,46 +38,68 @@
     </header>
     <!-- Fin menu -->
 
-    <!-- Inicio Carrusel de imagenes -->
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <div class="slider-item">
-                    <img id="slider-1" src="assets/imgs/pic1 915.jpg" alt="">
-                    <div class="caption">Descripcion de la imagen 1 </div>
-                </div>
-                <div class="slider-item">
-                    <img id="slider-2" src="assets/imgs/pic2 915.jpg" alt="">
-                    <div class="caption">Descripcion de la imagen 2 </div>
-                </div>
-                <div class="slider-item">   
-                    <img id="slider-3" src="assets/imgs/pic3 915.jpg" alt="">
-                    <div class="caption">Descripcion de la imagen 3 </div>
-                </div> 
-                <div class="slider-item">   
-                    <img id="slider-4" src="assets/imgs/pic4 915.jpg" alt="">
-                    <div class="caption">Descripcion de la imagen 4</div>
-                </div>
-                <div class="slider-item">    
-                    <img id="slider-5" src="assets/imgs/pic5 915.jpg" alt="">
-                    <div class="caption">Descripcion de la imagen 5</div>
-                </div>
-                <div class="slider-item">    
-                    <img id="slider-6" src="assets/imgs/pic6 915.jpg" alt="">
-                    <div class="caption">Descripcion de la imagen 6</div>
-                </div>    
-            </div>
-            <div class="slider-nav">
-                <a href="#slider-1"></a>
-                <a href="#slider-2"></a>
-                <a href="#slider-3"></a>
-                <a href="#slider-4"></a>
-                <a href="#slider-5"></a>
-                <a href="#slider-6"></a>
-            </div>
+    <!-- Inicio de imagenes -->
+
+    <h1>Galeria de imagenes</h1>
+    <h1>Sketchs</h1>
+    <div class="galeria">
+        <div class="foto">
+            <img src="assets/imgs/pic1 915.jpg" alt="">
         </div>
-    </section>
-    <!-- Fin carrusel -->
+        <div class="pie">
+            <p>Sketch no.1</p>
+            <p>Tardes de sol</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="assets/imgs/pic2 915.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>Sketch no.2</p>
+            <p>Caricias</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="assets/imgs/pic3 915.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>Sketch no.3</p>
+            <p>El abrazo</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="assets/imgs/pic4 915.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>Sketch no.4</p>
+            <p>Cinder</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="assets/imgs/pic5 915.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>Sketch no.5</p>
+            <p>Cold night</p>
+        </div>
+    </div>
+    <div class="galeria">
+        <div class="foto">
+            <img src="assets/imgs/pic6 915.jpg" alt="">
+        </div>
+        <div class="pie">
+            <p>Sketch no.6</p>
+            <p>Jim</p>
+        </div>
+    </div>
+
+
+    <!-- Fin de imagenes -->
+
     <!-- inicio de funciones de javascript -->
     <script>
         function showSidebar(){
