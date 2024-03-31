@@ -195,3 +195,17 @@ footer
     background-color:
     rgba(25, 5, 115, 0.5);
 }
+
+/* Estilos para el contenedor de redes sociales */
+.socials-container {
+    display: flex; /* Para que los elementos hijos se muestren en línea */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para las imágenes de redes sociales */
+.socials-container img {
+    width: 24px; /* Ancho deseado para las imágenes */
+    height: auto; /* Para mantener la proporción original */
+}
+
+
