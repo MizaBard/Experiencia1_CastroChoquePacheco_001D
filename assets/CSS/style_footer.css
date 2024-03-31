@@ -14,7 +14,7 @@ footer.top
     display: grid;
     border-bottom: 
     2px solid
-    rgb(0, 252, 29); /*colores*/
+    rgb(136, 0, 0); /*colores*/
     padding-bottom: 20px;
 }
 
@@ -50,11 +50,11 @@ footer.top h2
 {
     margin: 0 0 10px;
     font-size: 12px;
-    font-weight: 400; /*Grosor de la fuente (letra)*/
+    font-weight: 1000; /*Grosor de la fuente (letra)*/
     text-transform: uppercase;
     letter-spacing: 1px;
     color:
-        rgba(251, 0, 0, 0.96); /*colores*/
+        rgba(0, 0, 0, 0.96); /*colores*/
 }
 
 
@@ -193,7 +193,7 @@ footer.bottom{
 footer
 {
     background-color:
-    rgba(25, 5, 115, 0.5);
+    rgba(250, 178, 237, 0.5);
 }
 
 /* Estilos para el contenedor de redes sociales */
