@@ -2,19 +2,17 @@
 /* Color de letra de footer */
 footer
 {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
     margin: 0 30px;
-    color:
-    rgb(1, 0, 0 / 50%);
+    color: white;
 }
 
 /* esta es la perte superior de nuestro footer  */
 footer.top
 {
-    position: relative;
-    display: grid;
-    border-bottom: 
-    2px solid
-    rgb(0, 252, 29); /*colores*/
+    border-bottom: 2px solid rgb(255, 255, 255); /*colores*/
     padding-bottom: 20px;
 }
 
@@ -32,9 +30,8 @@ footer .top .links
 {
     display:grid;
     grid-template-columns: 
-        repeat(1, 1fr);
+        repeat(2, 1fr);
     gap: 30px;
-    margin-bottom: 30px;
 }
 
 /* espacio entre los links de 10px  y se centra el texto bajo la imagen (centrado)*/
@@ -54,7 +51,7 @@ footer.top h2
     text-transform: uppercase;
     letter-spacing: 1px;
     color:
-        rgba(251, 0, 0, 0.96); /*colores*/
+        rgba(255, 255, 255, 0.96); /*colores*/
 }
 
 
@@ -97,24 +94,12 @@ footer.bottom
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column-reverse;
     gap: 8px;
     padding: 20px 0;
     text-align: center;
 
-}
-
-/* anchor ancla  y tiene margen de 4px */
-.legal > a
-{
-    margin-right: 4px;
-
-}
-
-/* Formato texto de copyright */
-.legal.copyright {
-    font-size: 12px;
 }
 
 /* ********************************************************************************************************************** */
@@ -193,7 +178,7 @@ footer.bottom{
 footer
 {
     background-color:
-    rgba(25, 5, 115, 0.5);
+    #393e46;
 }
 
 /* Estilos para el contenedor de redes sociales */
