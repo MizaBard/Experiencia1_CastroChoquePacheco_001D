@@ -1,197 +1,70 @@
-/* FOOTERS LINKS FORMATOS Y COLORES */
-/* Color de letra de footer */
-footer
-{
-    margin: 0 30px;
-    color:
-    rgb(1, 0, 0 / 50%);
-}
-
-/* esta es la perte superior de nuestro footer  */
-footer.top
-{
-    position: relative;
-    display: grid;
-    border-bottom: 
-    2px solid
-    rgb(0, 252, 29); /*colores*/
-    padding-bottom: 20px;
-}
-
-/* establece un margen para las imagenes de mi clase .top de 50 pixeles y los margenes 
-izquierdo y derecho se ajustaran automaticamente dentro de mi contenedor */
-footer.top > img
-{
-    height: 50px;
-    margin: 0 auto 50px;
-}
-
-/*  esto crea un margen a los links relacionados en el footer y 
-les agrega un margen de 30 px*/
-footer .top .links
-{
-    display:grid;
-    grid-template-columns: 
-        repeat(1, 1fr);
-    gap: 30px;
-    margin-bottom: 30px;
-}
-
-/* espacio entre los links de 10px  y se centra el texto bajo la imagen (centrado)*/
-footer.top.links-column
-{
-    display: grid;
-    gap: 10px;
-    text-align: center;
-}
-
-/* formato de la letra del texto acorde a los links de interés */
-footer.top h2
-{
-    margin: 0 0 10px;
-    font-size: 12px;
-    font-weight: 400; /*Grosor de la fuente (letra)*/
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color:
-        rgba(251, 0, 0, 0.96); /*colores*/
-}
-
-
-/* margen superior del parrafo en el footer */
-footer.top p
-{
+*{
     margin: 0;
-}
-
-/* alineacion horizontal de cada elemento - en mi clase socials */
-footer.top .socials
-{
-    position:absolute;
-    left: 50%;
-    bottom: 10px;
-    translate:  -50% 0;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    height: 56px;
-}
-
-/* el tamaño de letra de el ancla o anchor 24px */
-footer.top.socials > a
-{
-    font-size: 24px;
-
-}
-
-/* oculta los elementos seleccionados los elementos en el () */
-.socials-column
-:is(h2, p)
-{
-    display:none;
-}
-
-/* footer.bottom  */
-
-footer.bottom
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    gap: 8px;
-    padding: 20px 0;
-    text-align: center;
-
-}
-
-/* anchor ancla  y tiene margen de 4px */
-.legal > a
-{
-    margin-right: 4px;
-
-}
-
-/* Formato texto de copyright */
-.legal.copyright {
-    font-size: 12px;
-}
-
-/* ********************************************************************************************************************** */
-/* el media tendra un ancho de 400px el cual afectará la columna acorde a links
-y los alineará a la izquiera */
-@media (width >400px){
-    .links-column{
-        text-align: left;
-    
-}
-
-/* parte superior de footer links  */
-footer.top .links{
-    grid-template-columns: 
-        repeat(2, 1fr);
-    margin-right: 50px;
-}
-
-/* parte superior de footer socials */
-footer.top .socials{
-    left: 0;
-    translate: 0;
-}
-
-/* footer parte superior, margen  */
-footer.top > img
-{
-    margin: 0 0 50px;
-}
-
-/* parte inferior del footer  */
-footer.bottom
-{
-    display: flex;
-    align-items: center;
-    justify-content: 
-        space-between;
-    flex-direction: row;
-    gap: 20px;
-    text-align: left;    
-}
-}
-/* ************************************************************************************* */
-
-
-/* condicion de ancho si es mayor a 640 pixeles */
-@media (width >= 640px){
-    footer{
-        margin: 0 auto;
-        max-width: 580px;
     padding: 0;
+    box-sizing: border-box;
+}
+.pie{
+    width: 100%;
+    background-color: #393e46;
 }
 
-
-/* footer superior links  */
-footer.top.links{
-    grid-template-columns: 
-    repeat(3, 1fr);
+.pie .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
 }
 
-footer.top .socials{
-    position: static;
+.pie .grupo-1 .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* parte inferior del footer, comienzo flexible */
-footer.bottom{
-    justify-content: 
-        flex-start;
-}
-
-.socials-column
-:is(h2, p){
-    display:block;
-}
+.pie .grupo-1 .caja figure img{
+    width: 250px;
 }
 
-footer
-{
-    background-color:
-    rgba(25, 5, 115, 0.5);
+.pie .grupo-1 .caja h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie .grupo-1 .caja p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.pie .grupo-1 .redes a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+}
+
+.pie .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .pie .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
 }
