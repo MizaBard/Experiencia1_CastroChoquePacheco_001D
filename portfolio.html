@@ -48,7 +48,7 @@
     <!-- Inicio de imagenes -->
     <h1>Galeria de imagenes - Sketchs</h1><br> <!--titulo de la pagina --> 
     <section class="section"> <!--apertura de seccion para la galeria de imagenes -->
-        <div class="card">    <!--clase card (añade formatos ) -->
+        <div class="card" onclick="voltear(this)">    <!--clase card (añade formatos ) -->
             <div class="card-container"> <!-- clase contenedora -->
                 <div class="card-face front-face"> <!--clase de cara frontal de nuestra imagen -->
                     <img src="assets/imgs/pic1 915.jpg" alt=""> <!--source de la imagen -->
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>   
-        <div class="card">    
+        <div class="card" onclick="voltear(this)">    
             <div class="card-container">
                 <div class="card-face front-face">
                     <img src="assets/imgs/pic2 915.jpg" alt="">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div> 
-        <div class="card">    
+        <div class="card" onclick="voltear(this)">    
             <div class="card-container">
                 <div class="card-face front-face">
                     <img src="assets/imgs/pic3 915.jpg" alt="">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div> 
-        <div class="card">    
+        <div class="card" onclick="voltear(this)">    
             <div class="card-container">
                 <div class="card-face front-face">
                     <img src="assets/imgs/pic4 915.jpg" alt="">
@@ -100,7 +100,7 @@
                 </div>
             </div>
         </div> 
-        <div class="card">    
+        <div class="card" onclick="voltear(this)">    
             <div class="card-container">
                 <div class="card-face front-face">
                     <img src="assets/imgs/pic5 915.jpg" alt="">
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </div> 
-        <div class="card">    
+        <div class="card" onclick="voltear(this)">    
             <div class="card-container">
                 <div class="card-face front-face">
                     <img src="assets/imgs/pic6 915.jpg" alt="">
@@ -171,6 +171,10 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
+        function voltear(card){
+            card.querySelector('.card-container').classList.toggle('is-flipped')
+        }
+
     </script>
     <!-- fin de las funciones de javascript -->
 </body>

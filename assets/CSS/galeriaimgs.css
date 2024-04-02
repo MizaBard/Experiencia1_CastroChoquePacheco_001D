@@ -42,7 +42,7 @@ h2 {
     border-radius: 10px;
 }
 
-.card:hover .card-container {
+.card .card-container.is-flipped {
     transform: rotateY(180deg);
 }
 
