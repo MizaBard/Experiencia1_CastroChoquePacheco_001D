@@ -19,6 +19,11 @@ main
   perspective: 2px;
 }
 
+/* esto es para ocultar el scroll lateral del parallax */
+main::-webkit-scrollbar {
+  display: none;
+}
+
 section 
 {
   transform-style: preserve-3d;
@@ -39,19 +44,19 @@ section h1
 
 .no-parallax 
 {
-  background-color: #5333ed;
+  background-color: #323eac;
   z-index: 999;
 }
 
 .parallax h1 
 {
   width: 60%;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .parallax::after 
 {
-  background-image: url("assets/imgs/photo.jpg");
+
   content: " ";
   position: absolute;
   top: 0;
@@ -63,9 +68,11 @@ section h1
   z-index: -1;
 }
 
+
+
 .bg::after 
 {
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("assets/imgs/photo.jpg");
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imgs/fondo\ parallax.jpg");
   background-size: cover;
 }
 
@@ -88,3 +95,4 @@ section h1
     align-items: center;
     margin-top: 20px; /* Ajusta el margen superior según sea necesario */
 }
+
