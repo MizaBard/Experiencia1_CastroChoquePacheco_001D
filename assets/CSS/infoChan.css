@@ -89,10 +89,10 @@ section h1
   }
 }
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+iframe {
+  display: block; /* Asegura que el video sea un elemento de bloque */
+  margin: 0 auto; /* Centra el video horizontalmente */
 }
+
+
 
