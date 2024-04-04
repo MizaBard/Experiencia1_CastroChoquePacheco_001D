@@ -75,7 +75,7 @@ section h1
   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../imgs/fondo\ parallax.jpg");
   background-size: cover;
 }
-
+/* paralax responsivo */
 @media screen and (min-width: 768px) 
 {
   section h1 
