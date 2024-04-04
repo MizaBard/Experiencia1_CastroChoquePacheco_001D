@@ -1,6 +1,6 @@
 /* Estilos para los párrafos laterales */
 .parrafo-lateral {
-    width: 100%; /* Ajustar el ancho al 100% */
+    width: 50%; /* Ajustar el ancho al 100% */
     display: flex;
     justify-content: center; /* Centrar horizontalmente el contenido */
 }
@@ -45,4 +45,5 @@
     border: 1px solid #ccc; /* Borde del contenedor */
     border-radius: 5px; /* Borde redondeado */
     box-shadow: 0 2px 4px rgba(214, 7, 7, 0.1); /* Sombra */
+    align-items: flex-start;
 }
