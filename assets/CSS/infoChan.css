@@ -89,7 +89,7 @@ section h1
   }
 }
 
-video {
+iframe {
   display: block; /* Asegura que el video sea un elemento de bloque */
   margin: 0 auto; /* Centra el video horizontalmente */
 }
