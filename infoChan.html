@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hojas de estilos -->
-    <link rel="stylesheet" href="assets/CSS/menu.css">
-
-    <link rel="stylesheet" href="assets/CSS/infoChan.css">
-  
-    <link rel="stylesheet" href="assets/CSS/style_footer.css">
+    <link rel="stylesheet" href="assets/CSS/menu.css"><!--Link a css menu.css-->
+    <link rel="stylesheet" href="assets/CSS/infoChan.css"><!--link a infochan.css -->
+    <link rel="stylesheet" href="assets/CSS/style_footer.css"><!--link a el estilo del footer -->
     <!-- iconos bootstrap -->
-
-
-    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon.png">
@@ -24,50 +19,48 @@
     <title>Xan Proxy</title>
 </head>
 <body>
-    <!-- menu -->
+    <!-- menu --> <!-- links acorde los hipervinculos hacia las otras paginas de nuestro html-->
     <header class="header">
         <nav>
             <ul class="sidebar">
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="infoChan.html">Sobre Xan</a></li>
+                <li><a href="#">Sobre Xan</a></li>
                 <li><a href="portfolio.html">Portafolio</a></li>
-            </ul>
+            </ul> <!-- si es visto de un explorador de ordenador("PC")-->
             <ul>
-                <li><a href="index.html"><img src="assets/imgs/logo chan 1500x512 v2.png" alt="logo"></a></li>
+                <li><img src="assets/imgs/logo chan 1500x512 v2.png" alt="logo"></li>
                 <li class="hideOnMobile"><a href="index.html">Inicio</a></li>
-                <li class="hideOnMobile"><a href="infoChan.html">Sobre Xan</a></li>
+                <li class="hideOnMobile"><a href="#">Sobre Xan</a></li>
                 <li class="hideOnMobile"><a href="portfolio.html">Portafolio</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-            </ul>
-        </nav>
+            </ul> <!--links para verlos en una pequeña box que aparece en el lado derecho de la pantalla -->
+        </nav> <!--fin del navegador de nuestra barra lateral -->
     </header>
     <!-- Fin menu -->
 
+    <!-- Cuerpo parallax -->
     <main>
 
-        <section class="no-parallax">
-          <h1>¡Hola a todos! Esto es Xan</h1>
+        <!--secciones acorde al parallax -->
+        <section class="no-parallax"> <!--clase paralax-->
+          <h1>¡Hola a todos! Yo soy Xan</h1> <!--Texto inicial de infoChan --> 
+        </section> <!--cierre de la primera seccion de parallax-->
+        <section class="parallax bg"><!--clase parallax background -->
+          <h2>Mi nombre es Chanttal Pacheco, tambien conocida como Xan Proxy. Nacida el 16 de Septiembre de 1991, siempre tuve facinacion por las artes visuales. He dibujado desde que tengo memoria, me gustan los retratos y la arquitectura. Por cosas de la vida terminé estudiando para formar parte del cuerpo AVSEC en la Escuela Tecnica Aeronautica y actualmente mi principal trabajo es ser parte del equipo K9 del aeropuerto Arturo Merino Benitez. Recientemente entre al mundo del tatuaje haciendo un curso en Ankaba (academia de tatuaje) y tambien hice un curso de para crear alfombras.</h2>
         </section>
-        <section class="parallax bg">
-          <h1>Sitio web dedicado a la exposición del Portafolio Artistico </h1>
-        </section>
         <section class="no-parallax">
-          <h1>Contacto</h1>
+          <h1>Sitio web dedicado a la exposición de mi Portafolio Artistico </h1>
         </section>
         <video controls>
             <source src="assets/imgs/video.mp4" type="video/mp4">
             Tu navegador no soporta el elemento de video.
-          </video>
+        </video>
+
     </main>
+    <!-- Fin cuerpo Parallax -->
     
-
-
-
-
-
-
-
+  <!--datos acorde al footer mas especificados en index.html -->
 
     <!-- Inicio Footer -->
     <footer class="pie">
@@ -86,9 +79,9 @@
             <div class="caja">
                 <h2>Siguenos</h2>
                 <div class="redes">
-                    <a href="#"><i class="bi bi-github"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://github.com/MizaBard" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/purenonsince/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com/MizaSenpai" target="_blank"><i class="bi bi-twitter-x"></i></a>
                 </div>
             </div>
         </div>
