@@ -4,27 +4,27 @@
     <link rel="stylesheet" href="assets/CSS/style_footer.css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap, iconos de bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- hojas de estilos -->
+    <!-- hojas de estilos, css, fuentes, colores-->
     <link rel="stylesheet" href="assets/CSS/menu.css">
     <link rel="stylesheet" href="assets/CSS/carrusel.css">
-
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/avicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/CSS/style_footer.css">
+    <!-- Favicon, icono de la pestaña, luego va el tamaño(para diferentes tipo de dispositivo)-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon/apple-touch-icon.png"><!-- este es para apple-->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon/avicon-32x32.png"><!-- este es para windows-->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon/favicon-16x16.png"><!-- este es para android-->
     <link rel="manifest" href="assets/imgs/favicon/site.webmanifest">
     <!-- fin Favicon -->
 
-    <title>Xan Proxy</title>
+    <title>Xan Proxy</title> <!--Titulo de las pestañas -->
 </head>
 
 <body>
     <!-- menu -->
-    <header class="header">
-        <nav>
-            <ul class="sidebar">
+    <header class="header"> <!--Clase header-->
+        <nav> <!--Nav viene de la palabra navigator o sea esta nos mandará a los links que esten dentro de esta misma o los podemos redireccionar donde sea deseado-->
+            <ul class="sidebar"> <!--Clase barra lateral, contiene una lista y anclas(anchors) a las otras paginas de nuestro sitio web-->
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="infoChan.html">Sobre Xan</a></li>
@@ -44,60 +44,55 @@
 
     <!-- Inicio carrusel -->
 
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="slider-1" src="assets/imgs/xan1.jpg" alt="">
-                <img id="slider-2" src="assets/imgs/xan2.jpg" alt="">                
-                <img id="slider-3" src="assets/imgs/xan3.jpg" alt="">                    
-            </div>
-            <div class="slider-nav">
-                <a href="#slider-1"></a>
-                <a href="#slider-2"></a>
-                <a href="#slider-3"></a>
-            </div>
-        </div>
-    </section>
+    <section class="container"> <!--se abre una nueva seccion -->
+        <div class="slider-wrapper"><!--(division)se llama a la clase slider-wrapper -->
+            <div class="slider"><!--Dentro de esta añadimos las 3 imagenes correspondientes al carousel con 3 imagenes --> 
+                <img id="slider-1" src="assets/imgs/xan1.jpg" alt=""><!--imagen 1  -->
+                <img id="slider-2" src="assets/imgs/xan2.jpg" alt=""><!--imagen 2  -->                
+                <img id="slider-3" src="assets/imgs/xan3.jpg" alt=""><!--imagen 3  -->                    
+            </div><!--cierre de division para las imagenes las cuales corresponden al carousel -->
+            <div class="slider-nav"> <!--navegador del slider  -->
+                <a href="#slider-1"></a><!--ancla(anchor) o boton del slider (trabaja en conjunto a las lineas anteriores) -->
+                <a href="#slider-2"></a><!--ancla(anchor) o boton del slider (trabaja en conjunto a las lineas anteriores) -->
+                <a href="#slider-3"></a><!--ancla(anchor) o boton del slider (trabaja en conjunto a las lineas anteriores) -->
+            </div><!--cierre de navegador de slider-->
+        </div><!--cierre de la division slider wrapper -->
+    </section> <!--cierre del contenedor para nuestro carousel -->
 
     <!-- Fin carrusel -->
     
     
-   <!-- Inicio Footer -->
-<section>
-    <footer class="top">
-        <img src="assets/imgs/logo chan 1500x512 v2.png" />
-        <div class="links">
-            <div class="links-column">
-                <h2>Inicio</h2>
-                <a>Introducción</a>
-                <!-- Si es que pones más links -->
-            </div>
-            <!-- Otra columna de links acá -->
-            <div class="columna de links - columna de socials">
-                <h2>Redes Sociales</h2>
-                <p>Síguenos...</p>    
-                <!-- Contenedor para las imágenes de redes sociales -->
-                <div class="socials-container">
-                    <!-- Imágenes de redes sociales vinculadas -->
-                    <a href="https://www.facebook.com" target="_blank"><i class="bi fb bi-facebook"></i>
-                    <a href="https://www.instagram.com/purenonsince/" target="_blank"><i class="bi bi-instagram"></i>
-                    <!-- Añade más redes sociales si es necesario -->
-                </div>
-            </div>
-        </div>
-    </footer>
-    <footer class="bottom">
-        <p class="copyright">©2024 Todos los Derechos Miza, Dexus, Sami</p>
-        <div class="legal">
-            <a>Licencia</a>
-            <!-- Mas links -->
-        </div>    
-    </footer>
-</section>
-<!-- Fin Footer -->
-
+    <!-- Inicio Footer -->
+    <footer class="pie"> <!--se inicia creacion de footer -->
+        <div class="grupo-1"><!--division de la imagen izquierda xan's proxy -->
+            <div class="caja"> <!--division para el contenedor de el logo correspondiente en la parte izquierda de nuestro footer -->
+                <figure><!-- apertura figura  -->
+                    <img src="assets/imgs/logo chan 1500x512 v2.png" alt="logo xan proxy"><!--se añade la imagen o logo correspondiente a esta -->
+                </figure><!--cierre de ingreso de logo -->
+            </div><!-- cierre de division de la figura -->
+            <div class="caja"> <!-- caja para agregar a los integrantes-->
+                <h2>Integrantes</h2> <!-- Titulo pequeño para mostrar sobre los integrantes-->
+                <p>Sthefanie "Sami" Castro</p><!-- integrante-->
+                <p>Jonathan "Dexus" Choque</p><!-- integrante-->
+                <p>Diego "Miza" Pacheco</p><!-- integrante-->
+            </div><!--cierre division caja -->
+            <div class="caja"> <!--nueva caja para los links de interés -->
+                <h2>Siguenos</h2><!--titulo de esta en tamaño h2--> 
+                <div class="redes"> <!--clase redes -->
+                    <a href="https://github.com/MizaBard" target="_blank"><i class="bi bi-github"></i></a><!--ancla(anchor) github -->
+                    <a href="https://www.instagram.com/purenonsince/" target="_blank"><i class="bi bi-instagram"></i></a><!--ancla(anchor) instagram -->
+                    <a href="https://twitter.com/MizaSenpai" target="_blank"><i class="bi bi-twitter-x"></i></a><!--ancla(anchor) Twitter "X"(actualmente)-->
+                </div><!--cierre de clase redes  -->
+            </div><!--cierre de la caja -->
+        </div><!--Cierre de clase grupo 1 es la parte "superior" de nuestro footer"pie de página" -->
+        <div class="grupo-2"><!--abrimos otra division para la parte inferior de nuestro footer(pie de página) -->
+            <small>&copy; 2024 <b>Xan Proxy</b> - Todos los derechos reservados.</small><!--(small comentario pequeño), b(texto el cual no afectará)añade texto extra -->
+        </div><!--cierre de la division  -->
+    </footer> <!--cierre de seccion de footer -->
+    <!-- Fin Footer -->
+    
     <!-- inicio de funciones de javascript para el header-->
-    <script>
+    <script> /*apertura de javascript */
         function showSidebar(){
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'flex'
@@ -106,7 +101,7 @@
             const sidebar = document.querySelector('.sidebar')
             sidebar.style.display = 'none'
         }
-    </script>
+    </script><!--cierre de javascript -->
     <!-- fin de las funciones de javascript -->
 </body>
 </html>
